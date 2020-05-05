@@ -105,3 +105,69 @@ if (m%n>0):
 else:  
   sum=m//n  
 print(sum)  
+
+2.8  
+### Given a year (as a positive integer), find the respective number of the century. 
+  >a = int(input()) 
+b = a//100  
+c = (b*100)  
+d = c+1  
+e=c-99  
+if (a>e and a<d):  
+  print(b)  
+else:  
+  b=b+1  
+  print(b)  
+
+2.9
+### A cupcake costs A dollars and B cents. Determine, how many dollars and cents should one pay for N cupcakes. A program gets three numbers: A, B, N. It should print two numbers: total cost in dollars and cents.
+
+  > a = int(input())  
+b = int(input())  
+n = int(input())  
+price = a + (b/100)  
+cost = price * n  
+total=cost*100  
+dollar=int(total//100)  
+cents=int(total-(dollar*100))  
+print(f'{dollar} {cents}')  
+
+2.A.
+### Days of week are numbered as: 0 — Sunday, 1 — Monday, 2 — Tuesday, ..., 6 — Saturday. An integer K in the range 1 to 365 is given. Find the number of day of week for K-th day of year provided that in this year January 1 was Thursday.   
+  >a = int(input())  
+if (a==0):  
+  a=int(input())  
+a=a+3  
+if (a>=7):  
+  a=a%7  
+print(a)  
+
+2.B.
+### Given the integer N - the number of minutes that is passed since midnight - how many hours and minutes are displayed on the 24h digital clock?
+  >n = int(input())  
+hour = n//60  
+min = n%60  
+if (min<10):  
+  minutes = f'0{min}'  
+else:  
+  minutes = f'{min}'  
+print(f'{hour} {minutes}') 
+
+2.C.
+### ???????????????
+  >
+
+2.D.
+### A school decided to replace the desks in three classrooms. Each desk sits two students. Given the number of students in each class, print the smallest possible number of desks that can be purchased.
+  >counter = 0  
+desk = 0  
+while (counter != 3):  
+  a = int(input())  
+  desk = desk + (a//2)  
+  if (a%2 != 0):  
+    desk = desk+1   
+  counter = counter + 1  
+print(desk)  
+
+3.1
+### 
