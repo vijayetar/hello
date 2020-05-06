@@ -170,4 +170,159 @@ while (counter != 3):
 print(desk)  
 
 3.1
-### 
+### Given an integer, print "odd" if it's odd and print "even" otherwise. 
+  >i = int(input())  
+if(i%2 !=0):  
+  print('odd')  
+else:  
+  print('even')  
+
+3.2
+### Given the two integers, print the least of them.
+  >a = int(input())  
+b = int(input())  
+if (a<b):  
+  print(a)  
+else:  
+  print(b)  
+
+3.3 
+### For the given integer X print 1 if it's positive, -1 if it's negative, or 0 if it's equal to zero.
+  >i = int(input())  
+if (i>1):  
+  print(1)  
+elif (i<0):  
+  print(-1)  
+else:  
+  print(0)  
+
+3.4
+### Given an integer, print "YES" if it's a three-digit number and print "NO" otherwise.
+  >a = int(input())  
+if (a>99 and a<1000):  
+  print('YES')  
+else:  
+  print('NO')  
+
+3.5
+### Given two non-zero integers, print "YES" if exactly one of them is positive and print "NO" otherwise.
+  >a = int(input())  
+b = int(input())  
+if (a>0 and b>0):  
+  print('NO')  
+elif (a<0 and b<0):  
+  print('NO')  
+else:  
+  print('YES')  
+
+3.6
+### Given a three-digit integer X consisting of three different digits, print "YES" if its three digits are going in an ascending order from left to right and print "NO" otherwise. 
+>a = int(input())  
+n1 = a//100  
+a = a - (n1*100)  
+n2 = a//10  
+n3 = a - (n2*10)  
+if (n2>n1 and n3>n2):  
+  print('YES')  
+else:  
+  print('NO')  
+
+3.7
+### Given a four-digit integer, print "YES" if it's a palindrome and print "NO" otherwise. 
+>a = int(input())  
+while (a<=999 or a>=10000):  
+  a = int(input())  
+n1 = a//1000  
+a = a-(n1*1000)  
+n2 = a//100  
+a = a-(n2*100)  
+n3 = a//10  
+n4 = a-(n3*10)  
+if ((n1==n1) and (n2==n3)):  
+  print('YES')  
+else:  
+  print('NO')  
+
+3.8
+### Given three integers, print the least of them.
+>a = int(input())  
+b = int(input())  
+c = int(input())  
+if (a<b and b<c):  
+  print(a)  
+elif(b<a and b<c):  
+  print(b)  
+else:  
+  print(c)  
+
+3.9
+### Given a month - an integer from 1 to 12, print the number of days in it in the year 2017.
+>thirtyOne = (1,3,5,7,8,10,12)  
+a = int(input())  
+if (a ==2):  
+  print(28)  
+elif(a in thirtyOne):  
+  print(31)  
+else:  
+  print(30)  
+
+3.A
+### Given three integers. Determine how many of them are equal to each other. 
+>a = int(input())  
+b = int(input())  
+c = int(input())  
+if (a != b and b !=c and a !=c):  
+  print(0)  
+elif ((a ==b and b !=c) or (b==c and a!=c) or (a==c and b!=a)):  
+  print(2)  
+else:  
+  print(3)  
+
+3.B
+### Given three integers, in which two are equal to each other and the third one is different. 
+>a = int(input())    
+b = int(input())    
+c = int(input())  
+if (a ==b and b !=c):  
+  print(3)  
+elif (b==c and a!=c):  
+  print(1)  
+else:  
+  print(2)  
+
+3.C.
+### Given two different squares of the chessboard, determine whether a rook can go from the first square to the second one in a single move.
+> x1 = int(input())  
+y1 = int(input())  
+x2 = int(input())  
+y2 = int(input())  
+if (x1==x2 or y1==y2):  
+  print('YES')  
+else:  
+  print('NO')  
+
+3.D
+### Given a square of a chessboard. If it's a black square, print YES, otherwise print NO.
+>a = int(input())  
+b = int(input())  
+if ((a%2 >0 and b%2 >0) or (a%2==0 and b%2==0)):  
+  print('YES')  
+else:  
+  print('NO')  
+
+3.E
+### Given two squares of a chessboard. If they are painted in the same color, print YES, otherwise print NO.  
+>x1 = int(input())  
+y1 = int(input())  
+x2 = int(input())  
+y2 = int(input()) 
+if ((x1%2 >0 and y1%2 >0) or (x1%2==0 and y1%2==0)):  
+  if ((x2%2 >0 and y2%2 >0) or (x2%2==0 and y2%2==0)):  
+    print('YES')  
+  else:  
+    print('NO')  
+else:  
+  if ((x2%2 >0 and y2%2 >0) or (x2%2==0 and y2%2==0)):  
+    print('NO')  
+  else:  
+    print('YES')  
